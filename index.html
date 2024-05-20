@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="style.css">
+  <title>Tetrisssss</title>
+</head>
+<body>
+  <div class="background">
+  </div>
+  <div class="popup" id="popup">
+    <div class="box" id="popup-content">
+      <div class="close">
+        <span onclick="closePopup()" id="closex">&times;</span>
+      </div>
+      <h2>¡Bienvenido!</h2>
+      <p>Por favor, introduce tu nombre:</p>
+      <input type="text" id="nameInput" placeholder="Tu nombre">
+      <button onclick="submitName()">Enviar</button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="box">
+      <h1 id="Welcomming">Bienvenido!</h1>
+      <h3>Instrucciones:</h3>
+      <p>Usa las flechas del teclado para mover las piezas. Presiona la flecha arriba para rotar, la flecha izquierda y derecha para mover, y la flecha abajo para acelerar la caída.</p>
+    </div>
+    <div class="midColumn">
+      <h1 id="Score">Score: 0</h1>
+      <h2 id="Timer">Time: 00:00</h2>
+      <canvas width="320" height="640" id="game"></canvas>
+      <button id="restartButton">Restart Game</button> <!-- Add this button -->
+    </div>
+    <div class="box" id="Scores">
+      <h1 id="Score">Best scores</h1>
+      <ol type="1" id="scoresList"></ol>
+    </div>
+  </div>
+  <script src="modalPopUp.js"></script>
+</body>
+</html>
